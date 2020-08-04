@@ -66,12 +66,14 @@
 	        
 				<li><a href="/archives">归档</a></li>
 	        
+				<li><a href="/categories">分类</a></li>
+	        
 				<li><a href="/tags">标签</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-			总文章数 2
+			总文章数 3
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -131,6 +133,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -149,13 +153,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags">随笔</a></li>
+					<li style="width: 20%"><a href="/tags">随笔</a></li>
 		        
-					<li style="width: 25%"><a href="/archives">归档</a></li>
+					<li style="width: 20%"><a href="/archives">归档</a></li>
 		        
-					<li style="width: 25%"><a href="/tags">标签</a></li>
+					<li style="width: 20%"><a href="/categories">分类</a></li>
+		        
+					<li style="width: 20%"><a href="/tags">标签</a></li>
 		        
 				</ul>
 			</nav>
@@ -203,7 +209,38 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+	
+	<div class="article-entry" itemprop="articleBody">
+			
+								
+				<h1 id="表空间，用户创建与授权"><a href="#表空间，用户创建与授权" class="headerlink" title="表空间，用户创建与授权"></a>表空间，用户创建与授权</h1><a id="more"></a>
 
+<h2 id="表空间"><a href="#表空间" class="headerlink" title="表空间"></a>表空间</h2><ul>
+<li>表空间：Oracle数据库的逻辑单元，数据库——表空间    一个表空间可以与多个数据文件（物理文件）关联</li>
+<li>数据库下可以创建多个表空间，一个表空间可以建立多个用户，一个用户下可以创建多个表</li>
+</ul>
+<h3 id="表空间的创建"><a href="#表空间的创建" class="headerlink" title="表空间的创建"></a>表空间的创建</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--创建表空间</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">tablespace</span> itcast	<span class="comment">--表空间的名称</span></span><br><span class="line"><span class="keyword">datafile</span> <span class="string">'c:\itcast.dbf'</span>	<span class="comment">--表空间所关联的物理文件</span></span><br><span class="line"><span class="keyword">size</span> <span class="number">100</span>m				   <span class="comment">--表空间的初始大小</span></span><br><span class="line"><span class="keyword">autoextend</span> <span class="keyword">on</span>			   <span class="comment">--开启表空间自动扩容</span></span><br><span class="line"><span class="keyword">next</span> <span class="number">10</span>m;				   <span class="comment">-- 设置每次扩容10m大小</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="表空间的删除"><a href="#表空间的删除" class="headerlink" title="表空间的删除"></a>表空间的删除</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--删除表空间</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">tablespace</span> itcast;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>==注意==：只有在删除了与物理文件相关联的表空间之后才能删除此物理文件。</li>
+</ul>
+<hr>
+<h2 id="用户创建与授权"><a href="#用户创建与授权" class="headerlink" title="用户创建与授权"></a>用户创建与授权</h2><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--用户创建</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> itheima	<span class="comment">--创建用户，指定用户名</span></span><br><span class="line"><span class="keyword">identified</span> <span class="keyword">by</span> itheima	<span class="comment">--指定用户的密码</span></span><br><span class="line"><span class="keyword">default</span> <span class="keyword">tablespace</span> itheima;	<span class="comment">--指定用户操作的表空间</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Oracle数据库的常用角色</span></span><br><span class="line">connect	<span class="comment">--连接角色</span></span><br><span class="line">resource<span class="comment">--开发角色</span></span><br><span class="line">dba		<span class="comment">--超级管理员</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--给角色授权</span></span><br><span class="line"><span class="keyword">grant</span> dba <span class="keyword">to</span> itheima;	<span class="comment">--为itheima角色授权超级管理员</span></span><br></pre></td></tr></table></figure>
+
+
+			
+		</div>
+	
       
         <h1 id="表空间，用户创建与授权"><a href="#表空间，用户创建与授权" class="headerlink" title="表空间，用户创建与授权"></a>表空间，用户创建与授权</h1><a id="more"></a>
 
@@ -368,6 +405,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/08/04/Oracle-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Oracle数据类型和表的创建
+        
+      </div>
+    </a>
   
   
     <a href="/2020/08/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
