@@ -275,69 +275,7 @@ class Vehicle{
 			
 		</div>
 	
-      <!--
 	  
-        <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>在软件的编写过程中，为了实现程序的高内聚低耦合，以及可维护性、可扩展性、重用性、灵活性等要求，采用设计模式来解决上述问题，也便于提高代码的可读性</p>
-<a id="more"></a>
-
-<h2 id="设计模式常用的7大原则"><a href="#设计模式常用的7大原则" class="headerlink" title="设计模式常用的7大原则"></a>设计模式常用的7大原则</h2><ol>
-<li>单一职责原则</li>
-<li>接口隔离原则</li>
-<li>依赖倒转(倒置)原则</li>
-<li>里氏替换原则</li>
-<li>开闭原则</li>
-<li>迪米特法则</li>
-<li>合成复用原则</li>
-</ol>
-<h3 id="单一职责原则"><a href="#单一职责原则" class="headerlink" title="单一职责原则"></a>单一职责原则</h3><p>​    单一职责原则是对于类来说，使一个类只负责一个功能。当一个类负责多个功能时，对于其中一部分功能的改动可能会造成其他功能的错误，所以将有多个功能的类拆分为多个类，从而实现低耦合。</p>
-<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><ol>
-<li><p>在持久层的dao设计中，一般都是一个dao负责一张表的crud，这就实现了单一职责原则。</p>
-</li>
-<li><pre><code class="java">public class SingleResponsibility {
-    public static void main(String[] args) {
-        Vehicle vehicle=new Vehicle();
-        vehicle.run(&quot;摩托车&quot;);//摩托车在公路上运行
-        vehicle.run(&quot;汽车&quot;);//汽车在公路上运行
-        vehicle.run(&quot;飞机&quot;);//飞机在公路上运行
-    }
-}
-
-// 交通工具类
-// 方式1
-// 1. 在方式1的run方法中，违背了单一职责原则，有的交通工具不是在公路上运行的
-// 2. 解决方案：根据交通工具运行方式不同，分解成不同的类:将vehicle分解
-class Vehicle{
-    void run(String vehicle){
-        System.out.println(vehicle+&quot;在公路上运行...&quot;);
-    }
-}
-
-// 方式2
-// 将原来的Vehicle类分解成三个类，对应处理不同的交通工具
-// 缺点：工作量大，并且还需要对主类做较大的修改
-
-// 方式3
-// 将方式1中的Vehicle类中添加另外的方法，实现方法级别的单一职责
-// 优点：相比于方式2来说，改动的代码较少
-class Vehicle{
-    void run(String vehicle){
-        System.out.println(vehicle+&quot;在公路上运行...&quot;);
-    }
-    void runAir(String vehicle){
-        System.out.println(vehicle+&quot;在天上运行...&quot;);
-    }
-    void runWater(String vehicle){
-        System.out.println(vehicle+&quot;在水上运行...&quot;);
-    }
-}</code></pre>
-</li>
-</ol>
-<ul>
-<li>在实例2中，对于不同的交通工具，设计出不同的类，或者在同一个类中设计出不同的方法，是在不同的层面实现了单一职责原则。实现了单个类或方法的变动，不会影响其他的类和方法，提高了程序的稳定性。</li>
-</ul>
-
-      
-	  -->
 	  
 	  
        
@@ -651,11 +589,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
               </li>
             
             <div class="clearfix"></div>
