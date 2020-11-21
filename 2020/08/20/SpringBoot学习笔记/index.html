@@ -6,17 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | 叶栩豪的博客</title>
+  <title>SpringBoot学习笔记 | 叶栩豪的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="叶栩豪的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="SpringBoot学习笔记​    springboot是在spring的基础上的一款更加简便高效的开发框架，对很多技术都提供了默认的配置，实现了”just run” springboot的特征：  创建独立的Spring程序 内嵌了Tomcat、Jetty、Undertow（无需部署成war） 启动器（starter）中包含了大量的依赖坐标，并且进行了版本的管理 提供了热部署工具 只需要少量的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot学习笔记">
+<meta property="og:url" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="叶栩豪的博客">
-<meta property="og:description" content="个人技术博客">
+<meta property="og:description" content="SpringBoot学习笔记​    springboot是在spring的基础上的一款更加简便高效的开发框架，对很多技术都提供了默认的配置，实现了”just run” springboot的特征：  创建独立的Spring程序 内嵌了Tomcat、Jetty、Undertow（无需部署成war） 启动器（starter）中包含了大量的依赖坐标，并且进行了版本的管理 提供了热部署工具 只需要少量的">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/idea%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%B3%A8%E5%86%8C.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%90%AF%E5%8A%A8%E7%B1%BB.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBootConfiguration%E6%B3%A8%E8%A7%A3.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E9%80%89%E6%8B%A9%E5%99%A8.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/springfactories%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E4%B8%A4%E4%B8%AA%E7%BB%91%E5%AE%9A%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%8C%BA%E5%88%AB.png">
+<meta property="article:published_time" content="2020-08-20T14:02:40.000Z">
+<meta property="article:modified_time" content="2020-08-21T14:01:43.537Z">
 <meta property="article:author" content="Sakura">
+<meta property="article:tag" content="技术博客">
+<meta property="article:tag" content="springboot">
+<meta property="article:tag" content="微服务">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/idea%E8%AE%BE%E7%BD%AE.png">
   
     <link rel="alternative" href="/atom.xml" title="叶栩豪的博客" type="application/atom+xml">
   
@@ -174,192 +187,208 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-SpringBoot学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/23/%E9%93%BE%E8%A1%A8/" class="archive-article-date">
-  	<time datetime="2020-08-23T14:57:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-23</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/23/%E9%93%BE%E8%A1%A8/">链表</a>
+    <h1 class="article-title" itemprop="name">
+      SpringBoot学习笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">链表</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/22/%E9%98%9F%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-08-22T15:42:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/22/%E9%98%9F%E5%88%97/">队列</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">队列</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/21/%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/" class="archive-article-date">
-  	<time datetime="2020-08-21T14:02:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/21/%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/">稀疏数组</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/21/test/" class="archive-article-date">
-  	<time datetime="2020-08-21T05:00:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/21/test/">test</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+			
+		
+		<!--显示阅读次数-->
+		
+		  <br/>
+		  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+		  <span class="icon-sort"></span>
+		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+					阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+		  </span>
+		  </a>
+		
+		<!--显示阅读次数完毕-->
+		
+        
+        <a href="/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2020-08-20T14:02:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">SpringBoot学习笔记</a>
-    </h1>
-  
+        
+      </header>
+    
+	
+	
+	<div class="article-entry" itemprop="articleBody">
+			
+								
+				<h1 id="SpringBoot学习笔记"><a href="#SpringBoot学习笔记" class="headerlink" title="SpringBoot学习笔记"></a>SpringBoot学习笔记</h1><p>​    springboot是在spring的基础上的一款更加简便高效的开发框架，对很多技术都提供了默认的配置，实现了”just run”</p>
+<p>springboot的特征：</p>
+<ol>
+<li>创建独立的Spring程序</li>
+<li>内嵌了Tomcat、Jetty、Undertow（无需部署成war）</li>
+<li>启动器（starter）中包含了大量的依赖坐标，并且进行了版本的管理</li>
+<li>提供了热部署工具</li>
+<li>只需要少量的自定义配置去覆盖默认配置</li>
+</ol>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<hr>
+<h2 id="springboot的启动器"><a href="#springboot的启动器" class="headerlink" title="springboot的启动器"></a>springboot的启动器</h2><p>​    springboot提供了启动器，启动器内包含了此启动器可能依赖的所有坐标，在创建一个springboot项目后，pom中会自动继承一个启动器的父工程，在父工程中，针对父工程的版本进行了大量的版本整合，所以我们不需要太过在意版本冲突问题。</p>
+<h3 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h3><p>​    web启动器：spring-boot-starter-web</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​    点进启动器看会发现web启动器包含了以下的依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.3.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-json<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.3.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-tomcat<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.3.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.8.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-webmvc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.8.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>由此，springboot的特点3的优势就展现了出来，不需要我们记住太多的坐标，只需要导入一个启动器即可导入大量的依赖，并且这些依赖的版本都是spring为我们整理好的，不需要担心版本冲突的问题</p>
+<hr>
+<h2 id="springboot的热部署"><a href="#springboot的热部署" class="headerlink" title="springboot的热部署"></a>springboot的热部署</h2><p>​    springboot的热部署实现了我们在开发的过程中，不需要重启项目就能使我们对代码的改动生效，可以节约一些时间。</p>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>​    springboot在启动的时候会创建两个ClassLoader，其中一个（Loader1）用来加载那些不会改变的静态资源，另一个（Loader2）用来加载那些容易改变的资源，当我们开启了自动编译之后，springboot会将其做比对，如果代码发生了变动，那么就会创建一个新的Loader2去替换之前的Loader2，从而实现热部署。</p>
+<p>​    但是如果发生变动的内容存在于<code>/META-INF/maven</code>, <code>/META-INF/resources</code>, <code>/resources</code>, <code>/static</code>, <code>/public</code>, or <code>/templates</code>这些目录下时，不会触发restert，而是触发live reload，这种live reload不会使项目重新编译，而是直接实现资源的替换。</p>
+<h3 id="热部署开启的方式"><a href="#热部署开启的方式" class="headerlink" title="热部署开启的方式"></a>热部署开启的方式</h3><ul>
+<li>首先引入开发者工具的依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>然后在idea设置里打开自动编译项目（默认关闭）</li>
+</ul>
+<p><img src="idea%E8%AE%BE%E7%BD%AE.png" alt="alert"></p>
+<ul>
+<li>最后按ctrl+alt+shift+/，然后点击注册，在注册中勾选如下的选项即可实现热部署</li>
+</ul>
+<p><img src="%E6%B3%A8%E5%86%8C.png" alt="注册"></p>
+<hr>
+<h2 id="springboot的自动配置"><a href="#springboot的自动配置" class="headerlink" title="springboot的自动配置"></a>springboot的自动配置</h2><p>​    springboot为我们提供了大量的默认的配置，我们无需配置那些通用的内容，但是还是要了解boot的自动配置的原理。</p>
+<h3 id="springboot的自动配置原理"><a href="#springboot的自动配置原理" class="headerlink" title="springboot的自动配置原理"></a>springboot的自动配置原理</h3><ol>
+<li>首先，springboot有一个启动类，这个启动类idea默认会放在我们域名下，并且以Application结尾</li>
+</ol>
+<p><img src="%E5%90%AF%E5%8A%A8%E7%B1%BB.png" alt="注册"></p>
+<p>我们来分析以下这个主启动类，这个主启动类看起来就是一个一般的java类，有一个main程序的入口，此外就是一个SpringBootApplication注解和这个SpringApplication的run方法。</p>
+<p>先来看看这个SpringBootConfiguration注解</p>
+<p><img src="SpringBootConfiguration%E6%B3%A8%E8%A7%A3.png" alt="注册"></p>
+<p>在boot的源码中采取了SPI的思想，通过创建公共接口，实现实体类的热插拔。在boot的底层源码中遵循了一种规范，即如果在类路径下的META-INF下存在spring.factories文件，那么会被boot进行解析，解析之后通过反射的方式加载对应的实体类并存入IOC容器，此外，下图中的选择器会实现对spring.factories文件的筛选解析，没有引用指定实体类的自动配置类则会被过滤，实现一种基于接口的动态实现。</p>
+<p><img src="%E9%80%89%E6%8B%A9%E5%99%A8.png" alt="选择器"></p>
+<p>springboot的自动配置类采用了Conditional*注解，实现热插拔</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span>(proxyBeanMethods = <span class="keyword">false</span>)</span><br><span class="line"><span class="meta">@ConditionalOnClass</span>(RedisOperations<span class="class">.<span class="keyword">class</span>)//这个注解表示当此类不存在时，这个配置类就不会被加载进容器(即此类失效)</span></span><br><span class="line"><span class="class">@<span class="title">EnableConfigurationProperties</span>(<span class="title">RedisProperties</span>.<span class="title">class</span>)</span></span><br><span class="line"><span class="class">@<span class="title">Import</span>(</span>&#123; LettuceConnectionConfiguration<span class="class">.<span class="keyword">class</span>, <span class="title">JedisConnectionConfiguration</span>.<span class="title">class</span> &#125;)</span></span><br><span class="line"><span class="class"><span class="title">public</span> <span class="title">class</span> <span class="title">RedisAutoConfiguration</span> </span>&#123;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="springboot的自定义配置"><a href="#springboot的自定义配置" class="headerlink" title="springboot的自定义配置"></a>springboot的自定义配置</h3><p>​    有很多东西springboot不可能实现自动配置，或者有时候我们不需要一些自动配置，而是我们自定义一些配置，这个时候在yml文件里面到底写一些什么内容呢？</p>
+<ul>
+<li>方式1：查看自动配置依赖中的spring.factories文件</li>
+</ul>
+<p><img src="springfactories%E6%96%87%E4%BB%B6.png" alt="注册"></p>
+<p>​    然后在文件中找到EnableAutoConfig下面的配置类，找到你自己想要自己配置的配置类点进去（比如说RedisAutoConfiguration）</p>
+<p>​    然后在这个配置类上面的EnableConfigurationProperties注解中找到对应的Properties，点进去就会看到我们可以自己配置的字段的名称</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"spring.redis"</span>)<span class="comment">//这里使我们要在yml中输入的前缀名</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisProperties</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Database index used by the connection factory.</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">int</span> database = <span class="number">0</span>;				<span class="comment">//这些属性就是我们可以自定义的字段</span></span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Connection URL. Overrides host, port, and password. User is ignored. Example:</span></span><br><span class="line"><span class="comment">    * redis://user:password@example.com:6379</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="keyword">private</span> String url;						<span class="comment">//自己配置uil</span></span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Redis server host.</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="keyword">private</span> String host = <span class="string">"localhost"</span>;		<span class="comment">//自己配置ip地址等等</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>方式2：查看官方文档</p>
+<p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html" target="_blank" rel="noopener">springboot属性</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="yml属性绑定"><a href="#yml属性绑定" class="headerlink" title="yml属性绑定"></a>yml属性绑定</h2><p>​    yml中可以配置各种数据类型，而且可以通过注解实现对实体类中属性的注入</p>
+<h3 id="ConfigurationProperties注解绑定"><a href="#ConfigurationProperties注解绑定" class="headerlink" title="ConfigurationProperties注解绑定"></a>ConfigurationProperties注解绑定</h3><p>​    ConfigutationProperties注解主要用于多个属性的绑定，例如在一个类中的所有属性绑定</p>
+<h4 id="方式1：set方法注入"><a href="#方式1：set方法注入" class="headerlink" title="方式1：set方法注入"></a>方式1：set方法注入</h4><p>在yml文件中配置如下属性</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里采用了松散绑定，可以自动匹配大小写 - _</span></span><br><span class="line"><span class="attr">yml:</span></span><br><span class="line">  <span class="attr">test:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">周杰伦</span></span><br><span class="line">    <span class="attr">age:</span> <span class="number">22</span></span><br><span class="line">    <span class="attr">son:</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">周杰</span></span><br><span class="line">      <span class="attr">age:</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在需要注入属性的实体类中使用ConfigurationProperties注解</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Conmonent</span><span class="comment">//这种方式一定要手动将这个加入IOC</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(<span class="string">"yml.test"</span>)<span class="comment">//set方法注入属性,在配置类中前缀不支持驼峰，支持羊肉串模式a-b</span></span><br><span class="line"><span class="meta">@Validated</span><span class="comment">//开启jsr303校验</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestYml</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> Son son=<span class="keyword">new</span> Son();<span class="comment">//注意这里是属性注入，不是注入对象，所以这里要有对象实例才能实现注入属性</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Data</span></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Son</span></span>&#123;</span><br><span class="line">        <span class="keyword">private</span> String name;</span><br><span class="line">        <span class="keyword">private</span> Integer age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意： 如果一个配置类只配置@ConfigurationProperties 注解，而没有使用@Component，那么在 IOC 容器中是获取不到 properties 配置文件转化的 bean。说白了 @EnableConfigurationProperties 相当于把使用 @ConfigurationProperties 的类进行了启用注入</p>
+<hr>
+<h4 id="方式2：构造函数注入"><a href="#方式2：构造函数注入" class="headerlink" title="方式2：构造函数注入"></a>方式2：构造函数注入</h4><p>yml文件中的配置不变</p>
+<p>要使用构造函数绑定，必须使用@EnableConfigurationProperties或配置属性扫描启用类。 不能对由常规 Spring 机制创建的 Bean 使用构造函数绑定（例如@Component Bean、通过 @Bean 方法创建的 Bean 或使用@Import 加载的 Bean） </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(<span class="string">"yml.test"</span>)<span class="comment">//set方法注入属性,在配置类中前缀不支持驼峰，支持羊肉串模式a-b</span></span><br><span class="line"><span class="meta">@ConstructorBinding</span><span class="comment">//构造函数注入属性,需要额外的EnableConfigurationProperties注解开启属性注入，并且不需要加入ioc容器</span></span><br><span class="line"><span class="meta">@Validated</span><span class="comment">//jar303属性校验</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestYml</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">TestYml</span><span class="params">(String name, Integer age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用@EnableConfigurationProperties来扫描上面的类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties</span>(TestYml<span class="class">.<span class="keyword">class</span>)//开启构造函数注入,并且传入要注入的类的<span class="title">class</span></span></span><br><span class="line"><span class="class"><span class="title">public</span> <span class="title">class</span> <span class="title">TestController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> TestYml test;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以前我们的纯注解的配置都需要在配置类中配置bean，而从SpringBoot2.2.1开始我们可以在非配置类的内部定义Bean加入IOC。</p>
+<hr>
+<h4 id="方式3：第三方组件注入"><a href="#方式3：第三方组件注入" class="headerlink" title="方式3：第三方组件注入"></a>方式3：第三方组件注入</h4><p>除了使用@ConfigurationProperties 注释类之外，还可以在 public@Bean 方法上使用它。 如果要将属性绑定到不在您控制范围内的第三方组件 依然采用之前的案例的 yaml 配置 创建一个其他组件类 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AnotherComponent</span> </span>&#123; </span><br><span class="line"><span class="keyword">private</span> <span class="keyword">boolean</span> enabled; </span><br><span class="line"> </span><br><span class="line"><span class="keyword">private</span> InetAddress remoteAddress; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>创建 MyService </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyService</span> </span>&#123; </span><br><span class="line"></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(<span class="string">"acme"</span>) <span class="comment">//第三方组件注入</span></span><br><span class="line"><span class="meta">@Bean</span> </span><br><span class="line"><span class="function"><span class="keyword">public</span> AnotherComponent <span class="title">anotherComponent</span><span class="params">()</span></span>&#123; </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> AnotherComponent(); </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>通过测试可以获得 AnotherComponent 组件的实例对象。 </p>
+<h3 id="Value注解绑定"><a href="#Value注解绑定" class="headerlink" title="Value注解绑定"></a>Value注解绑定</h3><p>value注解主要用于单个属性的绑定</p>
+<h4 id="与ConfigurationProperties注解的区别"><a href="#与ConfigurationProperties注解的区别" class="headerlink" title="与ConfigurationProperties注解的区别"></a>与ConfigurationProperties注解的区别</h4><p><img src="%E4%B8%A4%E4%B8%AA%E7%BB%91%E5%AE%9A%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="两个绑定注解的区别"></p>
+<hr>
+
+			
+		</div>
+	
+	  
+	  
+	  
+       
+         <div class="essayending">
+           <div>
+            <div style="text-align:center;color: #ccc;font-size:22px;">
+            <br/>
+            <br/>
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+            <br/>
+            <br/>
+             <br/>
+             <br/>
+            </div>
+           </div>
+         </div>
+       
+
+   
+   
+		<!-- 增加版权声明 -->
+		
+		
+		  <div class="declare" hidden="hidden"></div>
+		
+		<!-- 增加版权声明结束 -->
+		
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝阔落<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/zhifubao—money.JPG">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechat—money.JPG">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -379,188 +408,156 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://menglichuyu.github.io/2020/08/20/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/11/redis%E6%95%B0%E6%8D%AE%E5%BA%93/" class="archive-article-date">
-  	<time datetime="2020-08-11T09:32:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-11</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/08/21/test/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          test
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/11/redis%E6%95%B0%E6%8D%AE%E5%BA%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">redis数据库</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/11/redis%E6%95%B0%E6%8D%AE%E5%BA%93/">redis数据库</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">redis</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot学习笔记"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#springboot的启动器"><span class="toc-number">1.1.</span> <span class="toc-text">springboot的启动器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#例如"><span class="toc-number">1.1.1.</span> <span class="toc-text">例如</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#springboot的热部署"><span class="toc-number">1.2.</span> <span class="toc-text">springboot的热部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#原理"><span class="toc-number">1.2.1.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#热部署开启的方式"><span class="toc-number">1.2.2.</span> <span class="toc-text">热部署开启的方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#springboot的自动配置"><span class="toc-number">1.3.</span> <span class="toc-text">springboot的自动配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#springboot的自动配置原理"><span class="toc-number">1.3.1.</span> <span class="toc-text">springboot的自动配置原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#springboot的自定义配置"><span class="toc-number">1.3.2.</span> <span class="toc-text">springboot的自定义配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yml属性绑定"><span class="toc-number">1.4.</span> <span class="toc-text">yml属性绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ConfigurationProperties注解绑定"><span class="toc-number">1.4.1.</span> <span class="toc-text">ConfigurationProperties注解绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方式1：set方法注入"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">方式1：set方法注入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式2：构造函数注入"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">方式2：构造函数注入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式3：第三方组件注入"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">方式3：第三方组件注入</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Value注解绑定"><span class="toc-number">1.4.2.</span> <span class="toc-text">Value注解绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#与ConfigurationProperties注解的区别"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">与ConfigurationProperties注解的区别</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/" class="archive-article-date">
-  	<time datetime="2020-08-04T15:25:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/">设计模式学习心得</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/04/Oracle-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2020-08-04T06:55:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/04/Oracle-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA/">Oracle数据类型和表的创建</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Oracle</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/03/Oracle-%E7%94%A8%E6%88%B7%E5%88%9B%E5%BB%BA%E4%B8%8E%E6%8E%88%E6%9D%83/" class="archive-article-date">
-  	<time datetime="2020-08-02T16:04:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/03/Oracle-%E7%94%A8%E6%88%B7%E5%88%9B%E5%BB%BA%E4%B8%8E%E6%8E%88%E6%9D%83/">Oracle_用户创建与授权</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Oracle</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
 
+
+   
+       <section id="comments" class="comments">
+         <style>
+           .comments{margin:30px;padding:10px;background:#fff}
+           @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+         </style>
+         <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'true' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "6wrF2FhBWxstaap0NO4LiIzq-gzGzoHsz",
+    app_key: "vacNL9GiOxuvY5Gqc8PARIKS",
+    placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+    avatar: "identicon",
+  });
+</script>
+     </section>
+   
 
           </div>
         </div>
@@ -585,8 +582,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
